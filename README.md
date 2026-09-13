@@ -57,6 +57,20 @@ jupyter notebook Analysis.ipynb
 
 按顺序运行单元格即可；生成的图片会保存在 `results_bild/` 目录下。
 
+### 示例数据（脱敏，可直接试用）
+
+仓库自带一份完全虚构的脱敏示例数据 [`周计划_template.xlsx`](周计划_template.xlsx)（180天，随机生成，不含任何真实个人信息），生成脚本见 [`scripts/generate_sample_data.py`](scripts/generate_sample_data.py)。想直接体验效果，把 `Analysis.ipynb` 里的文件名改成 `周计划_template.xlsx` 即可运行，无需自己准备数据。
+
+用这份示例数据跑出来的效果（生成脚本：[`scripts/generate_demo_charts.py`](scripts/generate_demo_charts.py)）：
+
+| 分数趋势 + 成长值 | 任务时间分配 |
+|---|---|
+| ![score trend](results_demo/score_trend.png) | ![task donut](results_demo/task_donut.png) |
+
+| 周均分 |
+|---|
+| ![week average](results_demo/week_average.png) |
+
 ### 隐私说明
 
 `周计划.xlsx` 是我的真实个人日记式记录（包含每日感悟、生活细节等隐私内容），因此**没有**包含在这个公开仓库里（见 `.gitignore`）。仓库里只公开了分析代码本身。如果你想直接体验效果，请自行准备一份符合上述数据结构的 Excel 文件。
@@ -113,6 +127,20 @@ jupyter notebook Analysis.ipynb
 ```
 
 Run the cells in order; generated charts are saved to `results_bild/`.
+
+### Sample data (anonymized, ready to try)
+
+The repo ships a fully synthetic, anonymized sample dataset, [`周计划_template.xlsx`](周计划_template.xlsx) (180 days, randomly generated, no real personal information) — see [`scripts/generate_sample_data.py`](scripts/generate_sample_data.py). To try it immediately, just point `Analysis.ipynb` at `周计划_template.xlsx` instead of `周计划.xlsx` — no need to prepare your own data first.
+
+Output produced from this sample data (see [`scripts/generate_demo_charts.py`](scripts/generate_demo_charts.py)):
+
+| Score trend + growth value | Task allocation |
+|---|---|
+| ![score trend](results_demo/score_trend.png) | ![task donut](results_demo/task_donut.png) |
+
+| Weekly average |
+|---|
+| ![week average](results_demo/week_average.png) |
 
 ### Privacy note
 
