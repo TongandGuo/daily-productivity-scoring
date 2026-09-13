@@ -112,4 +112,29 @@ plt.tight_layout()
 plt.savefig("results_demo/week_average.png", dpi=150)
 plt.close(fig)
 
+# ---- chart 4: word cloud from (synthetic) daily reflections ----
+import jieba
+from wordcloud import WordCloud
+
+text = " ".join(df_period["每日感悟"].dropna().astype(str))
+text_cut = " ".join(jieba.lcut(text))
+
+with open("background_data/中文停用词表.txt", encoding="utf8") as f:
+    stopwords = set(f.read().split("\n"))
+
+word_cloud = WordCloud(
+    font_path="simsun.ttc",
+    background_color="white",
+    stopwords=stopwords,
+    width=1000,
+    height=700,
+)
+word_cloud.generate(text_cut)
+
+plt.figure(figsize=(10, 7), dpi=150)
+plt.imshow(word_cloud, interpolation="bilinear")
+plt.axis("off")
+plt.savefig("results_demo/wordcloud.png", dpi=150, bbox_inches="tight")
+plt.close()
+
 print("demo charts saved to results_demo/")

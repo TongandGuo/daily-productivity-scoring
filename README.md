@@ -67,9 +67,9 @@ jupyter notebook Analysis.ipynb
 |---|---|
 | ![score trend](results_demo/score_trend.png) | ![task donut](results_demo/task_donut.png) |
 
-| 周均分 |
-|---|
-| ![week average](results_demo/week_average.png) |
+| 周均分 | 每日感悟词云 |
+|---|---|
+| ![week average](results_demo/week_average.png) | ![wordcloud](results_demo/wordcloud.png) |
 
 ### 隐私说明
 
@@ -138,9 +138,9 @@ Output produced from this sample data (see [`scripts/generate_demo_charts.py`](s
 |---|---|
 | ![score trend](results_demo/score_trend.png) | ![task donut](results_demo/task_donut.png) |
 
-| Weekly average |
-|---|
-| ![week average](results_demo/week_average.png) |
+| Weekly average | Daily-reflection word cloud |
+|---|---|
+| ![week average](results_demo/week_average.png) | ![wordcloud](results_demo/wordcloud.png) |
 
 ### Privacy note
 
