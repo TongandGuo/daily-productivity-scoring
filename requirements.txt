@@ -1,0 +1,8 @@
+pandas>=1.5
+numpy>=1.23
+matplotlib>=3.6
+seaborn>=0.11
+openpyxl>=3.0
+jieba>=0.42
+wordcloud>=1.8
+jupyter>=1.0

@@ -1,0 +1,21 @@
+# Personal data — never publish real personal logs
+周计划.xlsx
+*周计划*.xlsx
+!周计划_template.xlsx
+
+# Generated outputs (may embed personal diary text/handwriting in charts)
+results_bild/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+
+# Word cloud / jieba caches
+jieba.cache
+
+# OS
+.DS_Store
+Thumbs.db
